@@ -1,0 +1,54 @@
+{
+  "t1_generations": {
+    "latency_s": 195.4539909362793,
+    "usage": {
+      "input_tokens": 103,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 103
+      },
+      "output_tokens": 5574,
+      "total_tokens": 5677
+    },
+    "status": 200
+  },
+  "t2_responses_no_websearch": {
+    "latency_s": 293.246239900589,
+    "usage": {
+      "input_tokens": 3054,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 758,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 3812
+    },
+    "output_types": [
+      "image_generation_call",
+      "message"
+    ],
+    "status": "completed"
+  },
+  "t3_responses_with_websearch": {
+    "latency_s": 243.68537592887878,
+    "usage": {
+      "input_tokens": 11316,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 833,
+      "output_tokens_details": {
+        "reasoning_tokens": 43
+      },
+      "total_tokens": 12149
+    },
+    "output_types": [
+      "web_search_call",
+      "image_generation_call",
+      "message"
+    ],
+    "status": "completed"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "timestamp": "20260518_131737",
+  "endpoint_name": "jzdm-foundry-swn",
+  "deployment": "gpt-image-2-globalstandard",
+  "api_version": "2025-04-01-preview",
+  "http_status": 200,
+  "apim_request_id": "21d08d07-011a-446f-90fa-53385681c964",
+  "latency_s": 29.11,
+  "input_image": "input_images/westie_lemon.png",
+  "mask_image": "outputs/mask_edit/westie_lemon_mask_20260518_131737.png",
+  "edited_image": "outputs/mask_edit/westie_lemon_mask_edit_20260518_131737.png",
+  "returned_size": "1024x1024",
+  "returned_quality": "low",
+  "usage": {
+    "input_tokens": 1051,
+    "input_tokens_details": {
+      "image_tokens": 1024,
+      "text_tokens": 27
+    },
+    "output_tokens": 196,
+    "output_tokens_details": {
+      "image_tokens": 196,
+      "text_tokens": 0
+    },
+    "total_tokens": 1247
+  },
+  "estimated_cost_usd": 0.014207
+}

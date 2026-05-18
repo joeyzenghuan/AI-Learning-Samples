@@ -1,0 +1,192 @@
+{
+  "edit_runs": [
+    {
+      "i": 1,
+      "latency": 25.635895013809204,
+      "usage": {
+        "input_tokens": 1056,
+        "input_tokens_details": {
+          "image_tokens": 1024,
+          "text_tokens": 32
+        },
+        "output_tokens": 208,
+        "total_tokens": 1264
+      },
+      "details": {
+        "image_tokens": 1024,
+        "text_tokens": 32
+      }
+    },
+    {
+      "i": 2,
+      "latency": 28.787056922912598,
+      "usage": {
+        "input_tokens": 1056,
+        "input_tokens_details": {
+          "image_tokens": 1024,
+          "text_tokens": 32
+        },
+        "output_tokens": 208,
+        "total_tokens": 1264
+      },
+      "details": {
+        "image_tokens": 1024,
+        "text_tokens": 32
+      }
+    },
+    {
+      "i": 3,
+      "latency": 28.128127813339233,
+      "usage": {
+        "input_tokens": 1056,
+        "input_tokens_details": {
+          "image_tokens": 1024,
+          "text_tokens": 32
+        },
+        "output_tokens": 208,
+        "total_tokens": 1264
+      },
+      "details": {
+        "image_tokens": 1024,
+        "text_tokens": 32
+      }
+    },
+    {
+      "i": 4,
+      "latency": 33.988791942596436,
+      "usage": {
+        "input_tokens": 1056,
+        "input_tokens_details": {
+          "image_tokens": 1024,
+          "text_tokens": 32
+        },
+        "output_tokens": 208,
+        "total_tokens": 1264
+      },
+      "details": {
+        "image_tokens": 1024,
+        "text_tokens": 32
+      }
+    },
+    {
+      "i": 5,
+      "latency": 27.591562032699585,
+      "usage": {
+        "input_tokens": 1056,
+        "input_tokens_details": {
+          "image_tokens": 1024,
+          "text_tokens": 32
+        },
+        "output_tokens": 208,
+        "total_tokens": 1264
+      },
+      "details": {
+        "image_tokens": 1024,
+        "text_tokens": 32
+      }
+    }
+  ],
+  "gen_runs": [
+    {
+      "i": 1,
+      "latency": 39.01846408843994,
+      "usage": {
+        "input_tokens": 1251,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 1251
+        },
+        "output_tokens": 208,
+        "total_tokens": 1459
+      },
+      "details": {
+        "image_tokens": 0,
+        "text_tokens": 1251
+      }
+    },
+    {
+      "i": 2,
+      "latency": 35.88739085197449,
+      "usage": {
+        "input_tokens": 1251,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 1251
+        },
+        "output_tokens": 208,
+        "total_tokens": 1459
+      },
+      "details": {
+        "image_tokens": 0,
+        "text_tokens": 1251
+      }
+    },
+    {
+      "i": 3,
+      "latency": 33.9758141040802,
+      "usage": {
+        "input_tokens": 1251,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 1251
+        },
+        "output_tokens": 208,
+        "total_tokens": 1459
+      },
+      "details": {
+        "image_tokens": 0,
+        "text_tokens": 1251
+      }
+    },
+    {
+      "i": 4,
+      "latency": 35.93351483345032,
+      "usage": {
+        "input_tokens": 1251,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 1251
+        },
+        "output_tokens": 208,
+        "total_tokens": 1459
+      },
+      "details": {
+        "image_tokens": 0,
+        "text_tokens": 1251
+      }
+    },
+    {
+      "i": 5,
+      "latency": 35.31427025794983,
+      "usage": {
+        "input_tokens": 1251,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 1251
+        },
+        "output_tokens": 208,
+        "total_tokens": 1459
+      },
+      "details": {
+        "image_tokens": 0,
+        "text_tokens": 1251
+      }
+    }
+  ],
+  "edit_cached_tokens_observed": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "gen_cached_tokens_observed": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "edit_max_cached": 0,
+  "gen_max_cached": 0
+}

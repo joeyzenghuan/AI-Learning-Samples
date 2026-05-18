@@ -1,0 +1,57 @@
+{
+  "v1_sdk_deployment_name": {
+    "ok": true,
+    "latency": 30.84907293319702,
+    "cost": 0.00638
+  },
+  "v1_sdk_model_name": {
+    "ok": false,
+    "error": "Error code: 400 - {'error': {'code': 'unknown_model', 'message': 'Unknown model: gpt-image-2', 'details': 'Unknown model: gpt-image-2'}}"
+  },
+  "matrix_2024-10-21  generations": {
+    "status": 200,
+    "latency": 24.399051189422607,
+    "error": ""
+  },
+  "matrix_2024-10-21  edits": {
+    "status": 404,
+    "latency": 2.8710520267486572,
+    "error": "Resource not found"
+  },
+  "matrix_2024-10-21  generations + jpeg": {
+    "status": 200,
+    "latency": 19.421322107315063,
+    "error": ""
+  },
+  "matrix_2025-04-01  edits": {
+    "status": 200,
+    "latency": 27.017418146133423,
+    "error": ""
+  },
+  "matrix_2025-04-01  generations + jpeg": {
+    "status": 200,
+    "latency": 23.17946982383728,
+    "error": ""
+  },
+  "format_png_vs_jpeg": {
+    "png_kb": 95.6953125,
+    "jpeg_kb": 36.5654296875,
+    "saving_pct": 61.78973793779083
+  },
+  "bg_opaque": {
+    "ok": true,
+    "latency": 15.81472897529602
+  },
+  "bg_auto": {
+    "ok": true,
+    "latency": 14.852606296539307
+  },
+  "bg_transparent": {
+    "ok": false,
+    "error": "Error code: 400 - {'error': {'message': 'Transparent background is not supported for this model.', 'type': 'image_generation_user_error', 'param': 'background', 'code': 'invalid_value'}}"
+  },
+  "pixar_edit": {
+    "ok": false,
+    "error": "Error code: 400 - {'error': {'message': \"The model 'gpt-image-2-globalstandard' does not exist.\", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+  }
+}

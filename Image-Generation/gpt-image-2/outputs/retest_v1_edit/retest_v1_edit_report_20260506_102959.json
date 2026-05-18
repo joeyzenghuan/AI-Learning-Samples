@@ -1,0 +1,53 @@
+{
+  "v1_sdk_edit__deploy_long": {
+    "ok": true,
+    "latency": 31.706812143325806,
+    "file": "outputs/retest_v1_edit/v1sdk_deploy_long_20260506_102959.png"
+  },
+  "v1_sdk_edit__deploy_short": {
+    "ok": true,
+    "latency": 27.999653100967407,
+    "file": "outputs/retest_v1_edit/v1sdk_deploy_short_20260506_102959.png"
+  },
+  "v1_sdk_edit__versioned_model": {
+    "ok": false,
+    "latency": 0.573371171951294,
+    "error": "Error code: 404 - {'error': {'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.', 'type': 'invalid_request_error', 'param': None, 'code': 'DeploymentNotFound'}}"
+  },
+  "v1_rest_edit__deploy_long": {
+    "ok": true,
+    "status": 200,
+    "latency": 32.265873193740845,
+    "file": "outputs/retest_v1_edit/v1rest_deploy_long_20260506_102959.png"
+  },
+  "v1_rest_edit__deploy_short": {
+    "ok": true,
+    "status": 200,
+    "latency": 70.78948998451233,
+    "file": "outputs/retest_v1_edit/v1rest_deploy_short_20260506_102959.png"
+  },
+  "v1_rest_edit__bare_model": {
+    "ok": true,
+    "status": 200,
+    "latency": 29.124995946884155,
+    "file": "outputs/retest_v1_edit/v1rest_bare_model_20260506_102959.png"
+  },
+  "v1_rest_edit__versioned_model": {
+    "ok": false,
+    "status": 404,
+    "latency": 2.8275556564331055,
+    "error": "The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again."
+  },
+  "deppath_edit__deploy_long": {
+    "ok": true,
+    "status": 200,
+    "latency": 33.506815910339355,
+    "file": "outputs/retest_v1_edit/deppath_deploy_long_20260506_102959.png"
+  },
+  "deppath_edit__deploy_short": {
+    "ok": true,
+    "status": 200,
+    "latency": 38.76115083694458,
+    "file": "outputs/retest_v1_edit/deppath_deploy_short_20260506_102959.png"
+  }
+}

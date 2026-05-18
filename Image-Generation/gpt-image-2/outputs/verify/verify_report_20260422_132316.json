@@ -1,0 +1,72 @@
+{
+  "v1_sdk_deployment_name": {
+    "ok": true,
+    "latency": 31.454386949539185,
+    "cost": 0.00638
+  },
+  "v1_sdk_model_name": {
+    "ok": false,
+    "error": "Error code: 400 - {'error': {'code': 'unknown_model', 'message': 'Unknown model: gpt-image-2', 'details': 'Unknown model: gpt-image-2'}}"
+  },
+  "matrix_2024-10-21  generations": {
+    "status": 200,
+    "latency": 19.80199694633484,
+    "error": ""
+  },
+  "matrix_2024-10-21  edits": {
+    "status": 404,
+    "latency": 2.757075071334839,
+    "error": "Resource not found"
+  },
+  "matrix_2024-10-21  generations + jpeg": {
+    "status": 200,
+    "latency": 19.89555525779724,
+    "error": ""
+  },
+  "matrix_2025-04-01  edits": {
+    "status": 200,
+    "latency": 27.977803945541382,
+    "error": ""
+  },
+  "matrix_2025-04-01  generations + jpeg": {
+    "status": 200,
+    "latency": 20.631240844726562,
+    "error": ""
+  },
+  "format_png_vs_jpeg": {
+    "png_kb": 108.54296875,
+    "jpeg_kb": 31.2333984375,
+    "saving_pct": 71.22485334868823
+  },
+  "bg_opaque": {
+    "ok": true,
+    "latency": 15.808521747589111
+  },
+  "bg_auto": {
+    "ok": true,
+    "latency": 16.159459114074707
+  },
+  "bg_transparent": {
+    "ok": false,
+    "error": "Error code: 400 - {'error': {'message': 'Transparent background is not supported for this model.', 'type': 'image_generation_user_error', 'param': 'background', 'code': 'invalid_value'}}"
+  },
+  "pixar_edit": {
+    "ok": false,
+    "error": "Error code: 400 - {'error': {'message': \"The model 'gpt-image-2-globalstandard' does not exist.\", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+  },
+  "v1_edit_model_gpt-image-2-globalstandard": {
+    "status": 400,
+    "latency": 3.5894291400909424,
+    "error": "The model 'gpt-image-2-globalstandard' does not exist."
+  },
+  "v1_edit_model_gpt-image-2": {
+    "status": 404,
+    "latency": 3.0881669521331787,
+    "error": "The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again."
+  },
+  "v1_edit_model_gpt-image-2-2026-04-21": {
+    "status": 404,
+    "latency": 3.625178813934326,
+    "error": "The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again."
+  }
+}

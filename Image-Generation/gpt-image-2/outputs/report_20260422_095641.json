@@ -1,0 +1,137 @@
+[
+  {
+    "test": "t2i_basic",
+    "status": 200,
+    "latency_s": 178.67,
+    "input_text": 49,
+    "input_image": 0,
+    "output_tokens": 3171,
+    "cost_usd": 0.095375
+  },
+  {
+    "test": "t2i_quality_low",
+    "status": 200,
+    "latency_s": 33.41,
+    "input_text": 37,
+    "input_image": 0,
+    "output_tokens": 208,
+    "cost_usd": 0.006425
+  },
+  {
+    "test": "t2i_quality_medium",
+    "status": 200,
+    "latency_s": 68.22,
+    "input_text": 37,
+    "input_image": 0,
+    "output_tokens": 805,
+    "cost_usd": 0.024335
+  },
+  {
+    "test": "t2i_quality_high",
+    "status": 200,
+    "latency_s": 198.76,
+    "input_text": 37,
+    "input_image": 0,
+    "output_tokens": 3171,
+    "cost_usd": 0.095315
+  },
+  {
+    "test": "t2i_chinese",
+    "status": 200,
+    "latency_s": 138.68,
+    "input_text": 98,
+    "input_image": 0,
+    "output_tokens": 5574,
+    "cost_usd": 0.16771
+  },
+  {
+    "test": "i2i_edit",
+    "status": 200,
+    "latency_s": 195.16,
+    "input_text": 42,
+    "input_image": 1024,
+    "output_tokens": 3171,
+    "cost_usd": 0.103532
+  },
+  {
+    "test": "i2i_multi",
+    "status": 200,
+    "latency_s": 177.93,
+    "input_text": 58,
+    "input_image": 2048,
+    "output_tokens": 5546,
+    "cost_usd": 0.183054
+  },
+  {
+    "test": "t2i_4k",
+    "status": 200,
+    "latency_s": 245.28,
+    "input_text": 38,
+    "input_image": 0,
+    "output_tokens": 16060,
+    "cost_usd": 0.48199
+  },
+  {
+    "test": "routing_auto_size",
+    "status": 200,
+    "latency_s": 136.2,
+    "input_text": 23,
+    "input_image": 0,
+    "output_tokens": 5574,
+    "cost_usd": 0.167335
+  },
+  {
+    "test": "routing_size_smimage",
+    "status": 400,
+    "latency_s": 1.39,
+    "input_text": 0,
+    "input_image": 0,
+    "output_tokens": 0,
+    "cost_usd": 0.0
+  },
+  {
+    "test": "routing_size_image",
+    "status": 400,
+    "latency_s": 1.49,
+    "input_text": 0,
+    "input_image": 0,
+    "output_tokens": 0,
+    "cost_usd": 0.0
+  },
+  {
+    "test": "routing_size_xlimage",
+    "status": 400,
+    "latency_s": 1.39,
+    "input_text": 0,
+    "input_image": 0,
+    "output_tokens": 0,
+    "cost_usd": 0.0
+  },
+  {
+    "test": "routing_bucket_16",
+    "status": 400,
+    "latency_s": 1.21,
+    "input_text": 0,
+    "input_image": 0,
+    "output_tokens": 0,
+    "cost_usd": 0.0
+  },
+  {
+    "test": "routing_bucket_48",
+    "status": 400,
+    "latency_s": 1.16,
+    "input_text": 0,
+    "input_image": 0,
+    "output_tokens": 0,
+    "cost_usd": 0.0
+  },
+  {
+    "test": "routing_bucket_96",
+    "status": 400,
+    "latency_s": 1.31,
+    "input_text": 0,
+    "input_image": 0,
+    "output_tokens": 0,
+    "cost_usd": 0.0
+  }
+]
