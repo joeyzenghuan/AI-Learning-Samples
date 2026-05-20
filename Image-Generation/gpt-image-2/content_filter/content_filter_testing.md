@@ -46,10 +46,11 @@
 ```
 
 ### Content Filter拦截类型
-1. **Content Filter 会审查三部分内容** — input prompt、input image、output image。
-2. **官方四大图像内容类别** — Microsoft Learn 的 [Image content / 图像内容](https://learn.microsoft.com/zh-cn/azure/foundry/openai/concepts/content-filter-severity-levels?tabs=definitions#image-content) 文档说明，内容安全系统会对图像内容按四大危害类别进行检测和过滤：**仇恨和公平、性、暴力、自我伤害**；每类再按 Safe / Low / Medium / High 严重级别划分。
-3. **gpt-image-2 内置 Content Filter 不能关闭或自定义** — 哪怕在 Portal 上配置了自定义 filter，后台只会走 Azure 默认 filter。
-4. **未成年人写实图像属于官方默认阻断能力类别** — Microsoft Learn 在 GPT-image 系列文档的 [Special considerations for generating images of minors](https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/dall-e?tabs=command-line%2Ckeyless%2Ctypescript-keyless&pivots=programming-language-python#special-considerations-for-generating-images-of-minors) 中说明：**photorealistic images of minors 默认会被阻断**。客户可通过官方表单申请该模型能力，Enterprise-tier / EA 企业客户会自动批准。这个申请属于官方能力准入/默认阻断类别调整，不等同于在 Portal 上自定义普通 Content Filter。
+1. **Image 生图请求链路** — `input text + input image` -> Azure Content Filter（可关闭）-> LLM prompt rewrite -> gpt-image-2（自带不可关闭的 Content Filter）-> Azure Content Filter（可关闭）。
+2. **Azure Content Filter 会审查输入和输出** — 可关闭的 Azure Content Filter 主要覆盖输入侧的 text/image 和输出侧的 image；中间的 gpt-image-2 内置 Content Filter 属于模型自带安全能力，不能关闭或自定义。
+3. **Azure 侧 Content Filter 关闭申请入口** — Microsoft Learn 的 [Responsible AI and image generation](https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/dall-e?tabs=command-line%2Ckeyless%2Ctypescript-keyless&pivots=programming-language-python#responsible-ai-and-image-generation) 页面提供申请入口；这个只针对 Azure 侧可关闭的 Content Filter，不影响 gpt-image-2 内置不可关闭的 Content Filter。
+4. **官方四大图像内容类别** — Microsoft Learn 的 [Image content / 图像内容](https://learn.microsoft.com/zh-cn/azure/foundry/openai/concepts/content-filter-severity-levels?tabs=definitions#image-content) 文档说明，内容安全系统会对图像内容按四大危害类别进行检测和过滤：**仇恨和公平、性、暴力、自我伤害**；每类再按 Safe / Low / Medium / High 严重级别划分。
+5. **未成年人写实图像属于官方默认阻断能力类别** — Microsoft Learn 在 GPT-image 系列文档的 [Special considerations for generating images of minors](https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/dall-e?tabs=command-line%2Ckeyless%2Ctypescript-keyless&pivots=programming-language-python#special-considerations-for-generating-images-of-minors) 中说明：**photorealistic images of minors 默认会被阻断**。客户可通过官方表单申请该模型能力，Enterprise-tier / EA 企业客户会自动批准。这个申请属于官方能力准入/默认阻断类别调整，不等同于在 Portal 上自定义普通 Content Filter。
 
 ---
 
@@ -106,7 +107,7 @@
 
 **严格拦截（即使有艺术/文化理由）:**
 - 泳装/比基尼模特 ❌
-- 内衣广告 ❌  
+- 内衣广告 ❌
 - 情侣亲密/床戏 ❌
 - 性感动漫角色 ❌
 - 经典裸体油画（维纳斯诞生、米开朗基罗风格）❌
